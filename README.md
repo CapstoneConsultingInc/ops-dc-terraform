@@ -1,1 +1,3 @@
-# ops-infra
+# ops-dc-terraform
+Terraform is used to reflect the data center's desired state. Automation manages this repository. There are times where manual intervention may be needed to correct issues. But the standard operating procedure has the scripts house in the [ops-jet](https://github.com/CapstoneConsultingInc/ops-jet) repo manipulating the terraform scripts and executing the appropriate `terraform` commands. This separates the logic surrounding the management of resources from the state management. By keeping Terraform files focused on declarative resource management and minimizing embedded logic, you can maintain cleaner, more maintainable, and more predictable infrastructure code.
+
